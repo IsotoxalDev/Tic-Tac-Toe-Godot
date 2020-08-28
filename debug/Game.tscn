@@ -1,0 +1,83 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/Game.gd" type="Script" id=1]
+[ext_resource path="res://Assets/grid tic tac toe.png" type="Texture" id=2]
+
+[node name="Game" type="Node"]
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 10, 10 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="O_Container" type="Node" parent="."]
+
+[node name="X_Container" type="Node" parent="."]
+
+[node name="a1" type="Button" parent="."]
+margin_right = 90.0
+margin_bottom = 90.0
+flat = true
+
+[node name="b1" type="Button" parent="."]
+margin_top = 110.0
+margin_right = 90.0
+margin_bottom = 190.0
+flat = true
+
+[node name="c1" type="Button" parent="."]
+margin_top = 210.0
+margin_right = 90.0
+margin_bottom = 300.0
+flat = true
+
+[node name="a2" type="Button" parent="."]
+margin_left = 110.0
+margin_right = 190.0
+margin_bottom = 90.0
+flat = true
+
+[node name="b2" type="Button" parent="."]
+margin_left = 110.0
+margin_top = 110.0
+margin_right = 190.0
+margin_bottom = 190.0
+flat = true
+
+[node name="c2" type="Button" parent="."]
+margin_left = 110.0
+margin_top = 210.0
+margin_right = 190.0
+margin_bottom = 300.0
+flat = true
+
+[node name="a3" type="Button" parent="."]
+margin_left = 210.0
+margin_right = 300.0
+margin_bottom = 90.0
+flat = true
+
+[node name="b3" type="Button" parent="."]
+margin_left = 210.0
+margin_top = 110.0
+margin_right = 300.0
+margin_bottom = 190.0
+flat = true
+
+[node name="c3" type="Button" parent="."]
+margin_left = 210.0
+margin_top = 210.0
+margin_right = 300.0
+margin_bottom = 300.0
+flat = true
+
+[connection signal="pressed" from="a1" to="." method="_on_a1_pressed"]
+[connection signal="pressed" from="b1" to="." method="_on_b1_pressed"]
+[connection signal="pressed" from="c1" to="." method="_on_c1_pressed"]
+[connection signal="pressed" from="a2" to="." method="_on_a2_pressed"]
+[connection signal="pressed" from="b2" to="." method="_on_b2_pressed"]
+[connection signal="pressed" from="c2" to="." method="_on_c2_pressed"]
+[connection signal="pressed" from="a3" to="." method="_on_a3_pressed"]
+[connection signal="pressed" from="b3" to="." method="_on_b3_pressed"]
+[connection signal="pressed" from="c3" to="." method="_on_c3_pressed"]
